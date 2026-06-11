@@ -43,3 +43,9 @@ body {
     text-align: center;
     margin-left: 45%;
 }
+
+.topBarClock {
+    font-family: 'mozilla', sans-serif;
+    text-align: center;
+    transform: translate(-12vh, 0%);
+}
