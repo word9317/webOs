@@ -55,8 +55,14 @@ function dragElement(element) {
 function closeWindow(element) {
   element.style.display = "none"
 }
+function openWindow(element) {
+  element.style.display = "flex"
+}
 var aboutClose = document.querySelector("#aboutclose")
 var welcomeScreen = document.querySelector("#window")
 aboutClose.addEventListener("click", function() {
   closeWindow(welcomeScreen);
+});
+aboutopen.addEventListener("click", function() {
+  openWindow(welcomeScreen);
 });
