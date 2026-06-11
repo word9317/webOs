@@ -9,15 +9,24 @@
 </head>
 
 <body>
-  <div class="topBar">
+  <div class="topBar" style="z-index: 1;">
     <p class="topBarText">unnamedOS</p>
     <p class="topBarClock" id="clock">time</p>
   </div>
-  <div style="border: solid; border-color: white; width: fit-content; border-radius: 10px; padding: 5px; transform: translate(50%, 50%);">
+
+  <div id="window"  
+    style="position: absolute; top: 50px; left: 50px; border: solid; border-color: white; width: fit-content; border-radius: 10px; padding: 5px; background-color: black;">
+    <span id="windowheader" style="cursor: move; display: flex; align-items: center; gap: 10px; color: white;">
+      <img class="headerbaricon" src="./assets/img/abouticon.png">
+      <span style="flex-grow: 1; margin-left: 40%; font-family: 'Roboto', sans-serif;">About</span>
+      <div id="aboutclose" style="width: 16px; height: 16px; cursor: pointer; background-color: #EC6B5E; border-radius: 16px; border: solid 1px rgba(0, 0, 0, 0.25); margin-right: 2px;"></div>
+    </span>
     <h1 style="color: white;">word9317's webOs made for Stardance Hackclub</h1>
     <img src="./assets/img/photographyphoto.jpg" class="pic-img">
   </div>
+
   <script src="assets/js/clockwidget.js"></script>
+  <script src="./assets/js/window.js"></script>
 </body>
 
 </html>

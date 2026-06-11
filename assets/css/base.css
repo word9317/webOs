@@ -15,6 +15,9 @@
 h1 {
     font-family: 'Roboto', sans-serif;
 }
+p {
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     /*Add background image, and position it and disable repeating*/
@@ -48,4 +51,9 @@ body {
     font-family: 'mozilla', sans-serif;
     text-align: center;
     transform: translate(-12vh, 0%);
+}
+
+.headerbaricon{
+    width: 50px;
+    height: 50px;
 }
