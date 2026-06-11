@@ -1,0 +1,5 @@
+/*graphics card macro image resizing, set max height*/
+.pic-img {
+      max-height: 50vh; 
+      width: auto;       
+    }
