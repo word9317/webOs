@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'mozilla';
+    src: url('../fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /*Add background image, and position it and disable repeating*/
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.topBar {
+    font-family: 'Roboto' sans-serif;
+    color: black;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.125);
+    color: #fff;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.topBarText {
+    font-family: 'mozilla', sans-serif;
+    text-align: center;
+    margin-left: 45%;
+}

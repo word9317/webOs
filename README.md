@@ -3,3 +3,6 @@ Going to have:
 1. About me
 2. Hobbies
  And more!
+ 
+ ## Current state:
+ Barebones, unusable
