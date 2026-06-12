@@ -8,9 +8,18 @@
   <link rel="stylesheet" href="./assets/css/window.css">
   <script src="./assets/js/windowsystem/window.js"></script>
   <script src="./assets/js/windowsystem/window-manager.js"></script>
+  <link rel="icon" type="image/x-icon" href="/timmy.png">
 </head>
 
 <body>
+  <!--Boot animation-->
+  <div id="boot-screen">
+    <div class="boot-content">
+      <img src="./timmy.png" alt="OS Logo" class="boot-logo">
+      <p class="boot-text">Starting unnamedOS...</p>
+    </div>
+  </div>
+
   <div class="topBar" style="z-index: 5;">
     <p class="topBarText">unnamedOS</p>
     <p class="topBarClock" id="clock">time</p>
@@ -26,25 +35,31 @@
     <p class="appicontext" style="transform: translateX(6px);">LSS</p>
   </div>
   <div id="nopad" style="transform: translate(5vh, 53vh);">
-    <img class="appiconpic"style="height: 64px; width: 80px;" src="./apps/scratchpad/icon.png">
+    <img class="appiconpic" style="height: 64px; width: 80px;" src="./apps/scratchpad/icon.png">
     <p class="appicontext" style="transform: translate(-5px, -20px);">scratchpad</p>
   </div>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       windowManager.init('.desktop');
       windowManager.openWindow('./apps/about/index.html', 'ABOUT', 800, 600, './apps/about/abouticon.png');
+
+      // set a timer so the boot isn't infinitely long, adjust that random 3000
+      setTimeout(() => {
+        const bootScreen = document.getElementById('boot-screen');
+        bootScreen.classList.add('fade-out');
+      }, 3000);
     });
-    aboutlauncher.addEventListener("click", function(){
+    aboutlauncher.addEventListener("click", function () {
       console.log("should open launcher here")
       windowManager.openWindow('./apps/about/index.html', 'ABOUT', 800, 600, './apps/about/abouticon.png');
     });
-    lsslauncher.addEventListener("click", function(){
+    lsslauncher.addEventListener("click", function () {
       windowManager.openWindow('./apps/lss/index.html', 'Loading Screen Simulator', 700, 450, './apps/lss/favicon.png');
     });
-    nopad.addEventListener("click", function(){
+    nopad.addEventListener("click", function () {
       windowManager.openWindow('./apps/scratchpad/index.html', 'NO pad --', 700, 450, './apps/scratchpad/icon.png');
     });
-</script>
+  </script>
 </body>
 
 </html>

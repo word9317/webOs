@@ -62,3 +62,50 @@ body {
 .appicontext{
     font-family: 'mozilla';
 }
+
+#boot-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+  transition: opacity 0.8s ease, visibility 0.8s; 
+}
+
+.boot-content {
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.boot-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 25px;
+  animation: spin 1s linear infinite; 
+}
+
+.boot-text {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-family: 'mozilla', sans-serif;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#boot-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
