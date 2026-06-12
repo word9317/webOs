@@ -1,7 +1,7 @@
 /* Another tuff asl font */ 
 @font-face {
   font-family: 'JetBrainsMono';
-  src: url('../fonts/roboto.ttf') format('truetype');
+  src: url('../fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,6 +37,7 @@
 }
 
 .titlebar .title {
+  font-family: 'JetBrainsMono', sans-serif;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -94,21 +95,6 @@
   display: none;
 }
 
-/* Taskbar styling */
-.taskbar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 56px;
-  background: #1c1c1c;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 10px;
-  z-index: 10000;
-}
-
 .task-item {
   display: inline-flex;
   align-items: center;
@@ -130,4 +116,3 @@
 .task-label { font-size: 12px; }
 
 /* Small icon in titlebar */
-.title-icon { vertical-align: middle; }

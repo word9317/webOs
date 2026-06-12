@@ -17,11 +17,19 @@
   </div>
   <div class="desktop"></div>
   <script src="assets/js/clockwidget.js"></script>
+  <div id="aboutlauncher" style="transform: translate(5vh, 85vh);">
+    <img class="appiconpic" src="./apps/about/abouticon.png">
+    <p class="appicontext">About</p>
+  </div>
   <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    windowManager.init('.desktop');
-    windowManager.openWindow('testwindow.html', 'testing', 800, 600, '');
-  });
+    window.addEventListener('DOMContentLoaded', () => {
+      windowManager.init('.desktop');
+      windowManager.openWindow('./apps/about/index.html', 'ABOUT', 800, 600, './apps/about/abouticon.png');
+    });
+    aboutlauncher.addEventListener("click", function(){
+      console.log("should open launcher here")
+      windowManager.openWindow('./apps/about/index.html', 'ABOUT', 800, 600, './apps/about/abouticon.png');
+    })
 </script>
 </body>
 
