@@ -273,9 +273,4 @@ class Window {
       try { this.onClose(); } catch (e) {}
     }
   }
-
-  getPlaytime() {
-    const elapsed = Date.now() - this.startTime;
-    return Math.floor(elapsed / 1000);
-  }
 }
