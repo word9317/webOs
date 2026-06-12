@@ -21,7 +21,7 @@ p {
 
 body {
     /*Add background image, and position it and disable repeating*/
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/photographyphoto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,6 +39,7 @@ body {
     color: #fff;
     justify-content: space-between;
     gap: 32px;
+    border-radius: 5px;
 }
 
 .topBarText {
