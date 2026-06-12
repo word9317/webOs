@@ -9,14 +9,15 @@
 /* Window styling */
 .window {
   position: absolute;
-  background: #050a14;
-  border: 2px solid #1a5fb4;
+  background: transparent;
+  border: 2px solid rgba(0, 38, 255, 0.6);
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
   font-family: 'JetBrainsMono', serif;
   min-width: 200px;
   min-height: 120px;
+  backdrop-filter: blur(2px);
 }
 
 .window.maximized {
@@ -26,7 +27,7 @@
 
 /* Titlebar */
 .titlebar {
-  background: #1a5fb4;
+  background: rgba(0, 38, 255, 0.6);
   color: #e1e1e1;
   padding: 8px 12px;
   display: flex;
@@ -69,7 +70,7 @@
 .window-content {
   flex: 1;
   overflow: hidden;
-  background: #050a14;
+  background: rgb(0, 0, 0);
 }
 
 /* ── Resize handles ── */
@@ -79,10 +80,10 @@
 }
 
 /* Edges */
-.resize-n  { top: 0;    left: 6px;  right: 6px;  height: 5px; cursor: n-resize; }
-.resize-s  { bottom: 0; left: 6px;  right: 6px;  height: 5px; cursor: s-resize; }
-.resize-w  { left: 0;   top: 6px;   bottom: 6px; width: 5px;  cursor: w-resize; }
-.resize-e  { right: 0;  top: 6px;   bottom: 6px; width: 5px;  cursor: e-resize; }
+.resize-n  { top: 0;    left: 6px;  right: 6px;  height: 5px; cursor: n-resize; border-radius: 2px;}
+.resize-s  { bottom: 0; left: 6px;  right: 6px;  height: 5px; cursor: s-resize; border-radius: 2px;}
+.resize-w  { left: 0;   top: 6px;   bottom: 6px; width: 5px;  cursor: w-resize; border-radius: 2px;}
+.resize-e  { right: 0;  top: 6px;   bottom: 6px; width: 5px;  cursor: e-resize; border-radius: 2px;}
 
 /* Corners */
 .resize-nw { top: 0;    left: 0;    width: 10px; height: 10px; cursor: nw-resize; }
