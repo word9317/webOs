@@ -1,11 +1,11 @@
 class WindowManager {
   constructor() {
-    this.windows = [];           // Array of all open Window objects
-    this.nextZIndex = 100;       // Current highest z-index
-    this.cascadeX = 50;          // Current cascade X position
-    this.cascadeY = 50;          // Current cascade Y position
-    this.cascadeOffset = 50;     // How much to offset each new window
-    this.desktopElement = null;  // Where windows go in DOM
+    this.windows = [];           // array of all open Window objects
+    this.nextZIndex = 100;       // current highest z-index
+    this.cascadeX = 50;          // current cascade X position
+    this.cascadeY = 50;          // current cascade Y position
+    this.cascadeOffset = 50;     // how much to offset each new window
+    this.desktopElement = null;  // where windows go in DOM
     this.screenWidth = window.innerWidth;
     this.screenHeight = window.innerHeight;
   }
