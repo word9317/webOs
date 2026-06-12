@@ -25,6 +25,10 @@
     <img class="appiconpic" src="./apps/lss/favicon.png">
     <p class="appicontext" style="transform: translateX(6px);">LSS</p>
   </div>
+  <div id="nopad" style="transform: translate(5vh, 53vh);">
+    <img class="appiconpic"style="height: 64px; width: 80px;" src="./apps/scratchpad/icon.png">
+    <p class="appicontext" style="transform: translate(-5px, -20px);">scratchpad</p>
+  </div>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       windowManager.init('.desktop');
@@ -36,6 +40,9 @@
     });
     lsslauncher.addEventListener("click", function(){
       windowManager.openWindow('./apps/lss/index.html', 'Loading Screen Simulator', 700, 450, './apps/lss/favicon.png');
+    });
+    nopad.addEventListener("click", function(){
+      windowManager.openWindow('./apps/scratchpad/index.html', 'NO pad --', 700, 450, './apps/scratchpad/icon.png');
     });
 </script>
 </body>
